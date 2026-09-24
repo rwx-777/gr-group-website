@@ -80,7 +80,10 @@ form input, form textarea, form select {
 }
 form textarea { grid-column: 1 / -1; min-height: 8rem; }
 .span { grid-column: 1 / -1; }
-.ok { display: none; font-weight: 700; grid-column: 1 / -1; }
+.more { display: inline-block; margin-top: .4rem; font-weight: 700; color: var(--ink); }
+.more:hover { color: var(--copper); }
+.page-hero { padding-bottom: 0; }
+.page-hero .hero-grid { padding-bottom: 2.5rem; }
 
 footer { background: #fff; border-top: 1px solid var(--line); padding: 1.4rem 0; color: var(--muted); font-size: .9rem; }
 .foot { display: flex; justify-content: space-between; gap: .8rem; align-items: center; flex-wrap: wrap; }
