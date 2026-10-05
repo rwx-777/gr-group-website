@@ -4,67 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Helios · G&R Group</title>
-  <meta name="description" content="Helios ist der KI-Arbeitsplatz für Makler: Post, Kalender und offene Punkte in einem Blick." />
-  <link rel="icon" href="favicon.svg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-page="ai">
   <header class="nav">
     <div class="wrap nav-inner">
-      <a href="index.html"><img src="images/gr-group.png" alt="G&R Group" class="logo" /></a>
-      <nav class="links" id="links">
-        <a href="sentry.html">Cybersecurity</a>
-        <a href="farming.html">Farming</a>
-        <a href="compliance.html">Compliance</a>
-        <a href="helios.html">Helios</a>
-        <a href="index.html#kontakt">Kontakt</a>
+      <a href="index.html"><img src="images/logo.png" alt="G&R Group" class="logo" /></a>
+      <nav class="nav-links">
+        <a href="sentry.html" data-i18n="cyber">Cybersecurity</a>
+        <a href="farming.html" data-i18n="farming">Smart Farming</a>
+        <a href="compliance.html" data-i18n="compliance">Compliance</a>
+        <a href="helios.html" data-i18n="aios">KI Workspace</a>
+        <button class="lang" id="langBtn" type="button">EN</button>
       </nav>
-      <div class="nav-actions">
-        <a class="btn" href="index.html#kontakt">Gespräch</a>
-        <button class="menu" id="menu" type="button" aria-label="Menü">Menü</button>
-      </div>
     </div>
   </header>
-  <main>
-    <section class="hero page-hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="kicker">ARTIFICIAL INTELLIGENCE · WORKSPACE</p>
-          <h1>Helios</h1>
-          <p class="lead">KI-Arbeitsplatz für Makler. Post, Kalender und offene Punkte in einem Blick — Zeit für Kunden statt für die Akte.</p>
-          <a class="btn" href="index.html#kontakt">Gespräch zu Helios</a>
-        </div>
-        <img src="images/ai.jpg" alt="Helios Workspace" />
-      </div>
-    </section>
-    <section>
-      <div class="wrap">
-        <div class="facts">
-          <div class="fact"><strong>Mein Tag</strong><span>Termine, Post und überfällige Punkte zuerst.</span></div>
-          <div class="fact"><strong>Wiedervorlage</strong><span>Was offen ist, bleibt sichtbar, bis es geschlossen wird.</span></div>
-          <div class="fact"><strong>Im Betrieb</strong><span>Für Agentur und Makler, nicht für den Konzern-IT-Saal.</span></div>
-        </div>
-        <div class="grid-2">
-          <img src="images/dash_overview.jpg" alt="Portfolio" />
-          <img src="images/dash_claims.jpg" alt="Schaden" />
-          <img src="images/dash_risk.jpg" alt="Risiko" />
-          <img src="images/dash_customers.jpg" alt="Bestand" />
-        </div>
-      </div>
-    </section>
-    <section class="paper">
-      <div class="wrap narrow">
-        <h2>Ein Tag in der Agentur</h2>
-        <p class="lead">Was heute ansteht, was überfällig ist und was der Kunde geschrieben hat, liegt auf einer Fläche. Helios hält die offenen Punkte, bis sie wirklich erledigt sind.</p>
-        <a class="more" href="index.html">Zurück zur Übersicht</a>
-      </div>
-    </section>
+  <main class="wrap page">
+    <a class="back" href="index.html" data-i18n="backHome">Zurück zur Übersicht</a>
+    <p class="kicker">ARTIFICIAL INTELLIGENCE · WORKSPACE</p>
+    <h1 data-i18n="aiTitle">Helios</h1>
+    <p class="lead" data-i18n="aiLead">KI Arbeitsplatz für Makler. Post, Kalender und offene Punkte in einem Blick — Zeit für Kunden statt für die Akte.</p>
+    <img class="hero-img" src="images/ai.jpg" alt="Helios" />
+    <div class="facts">
+      <div class="fact"><strong data-i18n="ai1t">Mein Tag</strong><span data-i18n="ai1d">Termine, Post und überfällige Punkte zuerst.</span></div>
+      <div class="fact"><strong data-i18n="ai2t">Wiedervorlage</strong><span data-i18n="ai2d">Was offen ist, bleibt sichtbar, bis es geschlossen wird.</span></div>
+      <div class="fact"><strong data-i18n="ai3t">Im Betrieb</strong><span data-i18n="ai3d">Für Agentur und Makler, nicht für den Konzern-IT-Saal.</span></div>
+    </div>
+    <p class="lead" style="margin-top:1.4rem" data-i18n="aiMore"></p>
+    <a class="btn" href="index.html#contact" data-i18n="talk">Gespräch</a>
   </main>
   <footer>
     <div class="wrap foot">
-      <img src="images/gr-group.png" alt="G&R Group" class="foot-logo" />
-      <p>Farming · Cybersecurity · Compliance · AI · Made in Germany</p>
+      <img src="images/logo.png" alt="G&R Group" class="foot-logo" />
+      <nav class="foot-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
     </div>
   </footer>
   <script src="app.js"></script>

@@ -4,61 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vairrigation · G&R Group</title>
-  <meta name="description" content="Vairrigation: präzise Bewässerung. Unser Versprechen: More crop per drop." />
-  <link rel="icon" href="favicon.svg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-page="farm">
   <header class="nav">
     <div class="wrap nav-inner">
-      <a href="index.html"><img src="images/gr-group.png" alt="G&R Group" class="logo" /></a>
-      <nav class="links" id="links">
-        <a href="sentry.html">Cybersecurity</a>
-        <a href="farming.html">Farming</a>
-        <a href="compliance.html">Compliance</a>
-        <a href="helios.html">Helios</a>
-        <a href="index.html#kontakt">Kontakt</a>
+      <a href="index.html"><img src="images/logo.png" alt="G&R Group" class="logo" /></a>
+      <nav class="nav-links">
+        <a href="sentry.html" data-i18n="cyber">Cybersecurity</a>
+        <a href="farming.html" data-i18n="farming">Smart Farming</a>
+        <a href="compliance.html" data-i18n="compliance">Compliance</a>
+        <a href="helios.html" data-i18n="aios">KI Workspace</a>
+        <button class="lang" id="langBtn" type="button">EN</button>
       </nav>
-      <div class="nav-actions">
-        <a class="btn" href="index.html#kontakt">Gespräch</a>
-        <button class="menu" id="menu" type="button" aria-label="Menü">Menü</button>
-      </div>
     </div>
   </header>
-  <main>
-    <section class="hero page-hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="kicker">SMART FARMING</p>
-          <h1>Vairrigation</h1>
-          <p class="lead">Unser Versprechen: More crop per drop. Digitale Feldwirtschaft für Wasser, Fläche und Ertrag — verständlich auf dem Hof, nicht nur in einer Zentrale.</p>
-          <a class="btn" href="index.html#kontakt">Gespräch zu Farming</a>
-        </div>
-        <img src="images/farming.jpg" alt="Vairrigation" />
-      </div>
-    </section>
-    <section>
-      <div class="wrap">
-        <div class="facts">
-          <div class="fact"><strong>Bewässerung</strong><span>Kreis- und Segmentsteuerung auf dem Feld.</span></div>
-          <div class="fact"><strong>Datenlage</strong><span>Fläche, Feuchte und Einsatzzeiten in einem Blick.</span></div>
-          <div class="fact"><strong>Betrieb</strong><span>Für Höfe, die Technik wollen – ohne Konzern-IT.</span></div>
-        </div>
-      </div>
-    </section>
-    <section class="paper">
-      <div class="wrap narrow">
-        <h2>Wofür es da ist</h2>
-        <p class="lead">Weniger Wasser an der falschen Stelle, mehr Ertrag dort, wo die Fläche es braucht. Die Steuerung bleibt auf dem Feld nachvollziehbar.</p>
-        <a class="more" href="index.html">Zurück zur Übersicht</a>
-      </div>
-    </section>
+  <main class="wrap page">
+    <a class="back" href="index.html" data-i18n="backHome">Zurück zur Übersicht</a>
+    <p class="kicker">SMART FARMING</p>
+    <h1>Vairrigation</h1>
+    <p class="lead" data-i18n="farmLead">Unser Versprechen: More crop per drop.</p>
+    <img class="hero-img" src="images/farming.jpg" alt="Vairrigation" />
+    <div class="facts">
+      <div class="fact"><strong data-i18n="farm1t">Bewässerung</strong><span data-i18n="farm1d">Kreis- und Segmentsteuerung auf dem Feld.</span></div>
+      <div class="fact"><strong data-i18n="farm2t">Datenlage</strong><span data-i18n="farm2d">Fläche, Feuchte und Einsatzzeiten in einem Blick.</span></div>
+      <div class="fact"><strong data-i18n="farm3t">Betrieb</strong><span data-i18n="farm3d">Für Höfe, die Technik wollen – ohne Konzern-IT.</span></div>
+    </div>
+    <p class="lead" style="margin-top:1.4rem" data-i18n="farmMore"></p>
+    <a class="btn" href="index.html#contact" data-i18n="talk">Gespräch</a>
   </main>
   <footer>
     <div class="wrap foot">
-      <img src="images/gr-group.png" alt="G&R Group" class="foot-logo" />
-      <p>Farming · Cybersecurity · Compliance · AI · Made in Germany</p>
+      <img src="images/logo.png" alt="G&R Group" class="foot-logo" />
+      <nav class="foot-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
     </div>
   </footer>
   <script src="app.js"></script>
