@@ -105,31 +105,32 @@
       <div class="band-copy">
         <p class="kicker">ARTIFICIAL INTELLIGENCE · WORKSPACE</p>
         <h2 data-i18n="aiTitle">Helios</h2>
-        <p class="lead" data-i18n="aiLead">KI Arbeitsplatz für Makler. Post, Kalender und offene Punkte in einem Blick — Zeit für Kunden statt für die Akte.</p>
+        <p class="lead" data-i18n="aiLead">Der KI-Arbeitsplatz, der mitdenkt.<br />Helios versteht Post, Termine und Vorgänge, erkennt Handlungsbedarf und priorisiert automatisch, was als Nächstes wichtig ist. Weniger Verwaltung. Mehr Zeit für Kunden.</p>
         <div class="facts">
-          <div class="fact"><strong data-i18n="ai1t">Mein Tag</strong><span data-i18n="ai1d">Termine, Post und überfällige Punkte zuerst.</span></div>
-          <div class="fact"><strong data-i18n="ai2t">Wiedervorlage</strong><span data-i18n="ai2d">Was offen ist, bleibt sichtbar, bis es geschlossen wird.</span></div>
-          <div class="fact"><strong data-i18n="ai3t">Im Betrieb</strong><span data-i18n="ai3d">Für Agentur und Makler, nicht für den Konzern-IT-Saal.</span></div>
+          <div class="fact"><strong data-i18n="ai1t">Priorisiert für Sie</strong><span data-i18n="ai1d">Was heute wirklich wichtig ist.</span></div>
+          <div class="fact"><strong data-i18n="ai2t">Denkt voraus</strong><span data-i18n="ai2d">Erkennt Fristen, Aufgaben und nächste Schritte.</span></div>
+          <div class="fact"><strong data-i18n="ai3t">Nimmt Arbeit ab</strong><span data-i18n="ai3d">Weniger Routine. Mehr Zeit für Kunden.</span></div>
         </div>
       </div>
     </section>
 
     <section class="wrap contact" id="contact">
       <p class="kicker" data-i18n="contactKicker">KONTAKT</p>
-      <h2 data-i18n="contactTitle">Welches Feld zuerst?</h2>
-      <p class="lead" data-i18n="contactLead">G&R Sentry, Farming, Compliance oder Helios. Wir zeigen die Lösung am Betrieb, nicht nur auf dem Bildschirm.</p>
+      <h2 data-i18n="contactTitle">Lassen Sie uns über Ihre Herausforderung sprechen.</h2>
+      <p class="lead" data-i18n="contactLead">Ob Cybersecurity, Smart Farming, Compliance oder KI-Arbeitsplatz – wir zeigen Ihnen, wie unsere Technologie konkret in Ihrem Unternehmen eingesetzt werden kann.</p>
       <form id="form">
         <input name="name" required data-i18n-placeholder="phName" placeholder="Name" />
         <input name="company" data-i18n-placeholder="phCompany" placeholder="Unternehmen" />
         <input type="email" name="email" required data-i18n-placeholder="phEmail" placeholder="E-Mail" />
-        <select name="topic">
-          <option data-i18n="optFarm">Smart Farming</option>
-          <option data-i18n="optCyber">Cybersecurity / G&R Sentry</option>
-          <option data-i18n="optComp">Compliance / Legal Tech</option>
-          <option data-i18n="optAi">Helios Workspace</option>
+        <select name="topic" required>
+          <option value="" selected disabled data-i18n="optPrompt">Wofür interessieren Sie sich?</option>
+          <option data-i18n="optCyber">Cybersecurity – Sentry</option>
+          <option data-i18n="optFarm">Smart Farming – Vairrigation</option>
+          <option data-i18n="optComp">Compliance</option>
+          <option data-i18n="optAi">KI-Arbeitsplatz – Helios</option>
         </select>
-        <textarea name="msg" rows="4" data-i18n-placeholder="phMsg" placeholder="Kurz Ihr Vorhaben"></textarea>
-        <button type="submit" data-i18n="submit">Anfrage vorbereiten</button>
+        <textarea name="msg" rows="4" data-i18n-placeholder="phMsg" placeholder="Was möchten Sie lösen oder verbessern?"></textarea>
+        <button type="submit" data-i18n="submit">Gespräch anfragen</button>
         <p id="thanks" hidden data-i18n="thanks">Danke. Die Anfrage liegt bereit für den Versand.</p>
       </form>
     </section>
