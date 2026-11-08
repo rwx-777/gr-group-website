@@ -1,150 +1,214 @@
+/* G&R Group – German/English copy and interaction for the static website. */
 const copy = {
   de: {
-    htmlLang: "de",
-    title: "G&R Group",
-    farming: "Smart Farming",
-    cyber: "Cybersecurity",
-    compliance: "Compliance",
-    aios: "KI Workspace",
-    kickerHero: "MADE IN GERMANY",
-    heroTitle: "Zukunft annehmen.<br />Technologie vertrauen.",
-    heroLead: "Wir entwickeln und verbinden souveräne Cybersicherheit, Smart Farming, Legal Tech und KI-Lösungen.",
-    products: "Produkte ansehen",
-    fieldsKicker: "GESCHÄFTSFELDER",
-    fieldsTitle: "Was G&R Group baut",
-    fieldsLead: "Vier Produkte, eine Messlatte: operative Exzellenz und Geschwindigkeit.",
-    cardFarm: "Vairrigation – präzise Bewässerung und digitale Feldwirtschaft.",
-    cardCyber: "G&R Sentry – KI-gestützte Intrusion Detection im eigenen Netz.",
-    cardComp: "Legal Tech für GDPR, NIS2 und nachvollziehbare Prüfpfade.",
-    cardAiTitle: "Artificial Intelligence",
-    cardAi: "KI Arbeitsplatz für Makler: Post, Kalender, Aufgaben und Bestand.",
-    farmLead: "More crop per drop.<br />Mit KI und Satellitendaten genau wissen, was jedes Feld braucht.",
-    farm1t: "Gezielt bewässern", farm1d: "Wissen, wann und wie viel Wasser jedes Feld wirklich braucht.",
-    farm2t: "Felder im Blick", farm2d: "Feuchtigkeit, Pflanzenzustand und Entwicklung auf einen Blick.",
-    farm3t: "Ressourcen sparen", farm3d: "Weniger Wasser und Dünger einsetzen – ohne Ertrag zu verschenken.",
-    cyberTitle: "Sentry",
-    cyberLead: "Sentry erkennt Cyberangriffe frühzeitig, bewertet Risiken automatisch und warnt, bevor Schaden entsteht.",
-    cy1t: "Angriffe früh erkennen", cy1d: "Erkennt verdächtige Aktivitäten, bevor Schaden entsteht.",
-    cy2t: "Daten im Blick behalten", cy2d: "Zeigt Risiken und Warnungen zentral und verständlich.",
-    cy3t: "Einfach im Einsatz", cy3d: "Funktioniert im Alltag – ohne eigenes Security Team.",
-    compTitle: "Compliance auf einen Blick",
-    compLead: "Unsere KI überwacht relevante Vorschriften, erkennt Änderungen und zeigt Ihnen, wo Handlungsbedarf besteht.",
-    co1t: "Vorschriften im Blick", co1d: "Alle relevanten Gesetze und Anforderungen für Ihr Unternehmen.",
-    co2t: "Änderungen früh erkennen", co2d: "Neue Vorgaben werden automatisch erkannt und eingeordnet.",
-    co3t: "Handlungsbedarf erkennen", co3d: "Sofort sehen, wo etwas zu tun ist und was als Nächstes ansteht.",
-    aiTitle: "Helios",
-    aiLead: "Der KI-Arbeitsplatz, der mitdenkt.<br />Helios versteht Post, Termine und Vorgänge, erkennt Handlungsbedarf und priorisiert automatisch, was als Nächstes wichtig ist. Weniger Verwaltung. Mehr Zeit für Kunden.",
-    ai1t: "Priorisiert für Sie", ai1d: "Was heute wirklich wichtig ist.",
-    ai2t: "Denkt voraus", ai2d: "Erkennt Fristen, Aufgaben und nächste Schritte.",
-    ai3t: "Nimmt Arbeit ab", ai3d: "Weniger Routine. Mehr Zeit für Kunden.",
-    contactKicker: "KONTAKT",
-    contactTitle: "Lassen Sie uns über Ihre Herausforderung sprechen.",
-    contactLead: "Ob Cybersecurity, Smart Farming, Compliance oder KI-Arbeitsplatz – wir zeigen Ihnen, wie unsere Technologie konkret in Ihrem Unternehmen eingesetzt werden kann.",
-    phName: "Name", phCompany: "Unternehmen", phEmail: "E-Mail", phMsg: "Was möchten Sie lösen oder verbessern?",
-    optPrompt: "Wofür interessieren Sie sich?",
-    optCyber: "Cybersecurity – Sentry", optFarm: "Smart Farming – Vairrigation", optComp: "Compliance", optAi: "KI-Arbeitsplatz – Helios",
-    submit: "Gespräch anfragen",
-    thanks: "Danke. Die Anfrage liegt bereit für den Versand.",
-    more: "Zur Produktseite",
-    backHome: "Zurück zur Übersicht",
-    talk: "Gespräch",
-    sentryPageTitle: "Sentry · G&R Group",
-    sentryMore: "Sentry lernt den normalen Verkehr und schlägt Alarm, sobald etwas davon abweicht. Portscans, Tunnel, Botnetze und ungewöhnliche Datenabflüsse werden verständlich gemeldet.",
-    farmPageTitle: "Vairrigation · G&R Group",
-    farmMore: "Weniger Wasser an der falschen Stelle, mehr Ertrag dort, wo die Fläche es braucht. Die Steuerung bleibt auf dem Feld nachvollziehbar.",
-    compPageTitle: "Compliance · G&R Group",
-    compMore: "Die Rechtsabteilung sieht auf einen Blick, wo das Unternehmen den Anforderungen entspricht und wo nachgeschärft werden muss.",
-    aiPageTitle: "Helios · G&R Group",
-    aiMore: "Was heute ansteht, was überfällig ist und was der Kunde geschrieben hat, liegt auf einer Fläche. Offene Punkte bleiben sichtbar, bis sie erledigt sind."
+    htmlLang: 'de',
+    pageTitle: 'G&R Group | Technologie entwickeln. Zukunft gestalten.',
+    pageDescription: 'G&R Group entwickelt eigene Softwarelösungen für Netzwerksicherheit, regulatorische Compliance, KI-Arbeitsplätze und Smart Farming.',
+    skip: 'Zum Inhalt springen',
+    navProducts: 'Lösungen', navAbout: 'Unternehmen', navContact: 'Kontakt',
+    heroEyebrow: 'MADE IN GERMANY',
+    heroTitle: 'Technologie entwickeln.<br /><span class="title-accent">Zukunft gestalten.</span>',
+    heroLead: 'Wir entwickeln intelligente Softwarelösungen für sichere Netzwerke, regulatorische Transparenz, produktivere Arbeitsprozesse und datenbasierte Landwirtschaft.',
+    productsCTA: 'Lösungen entdecken', contactCTA: 'Gespräch anfragen',
+    fieldsKicker: 'UNSERE LÖSUNGEN',
+    fieldsTitle: 'Vier Lösungen.<br /><span class="text-muted">Eine gemeinsame Vision.</span>',
+    fieldsLead: 'Vier eigene Softwarelösungen für Netzwerksicherheit, regulatorische Compliance, produktive Arbeitsprozesse und datenbasierte Landwirtschaft.',
+    cardCyber: 'Cyberangriffe erkennen, bevor sie zum Problem werden.',
+    cardComp: 'Regulatorische Veränderungen erkennen. Sicherer entscheiden.',
+    cardAi: 'Weniger Verwaltung. Mehr Zeit für Ihre Kunden.',
+    cardFarm: 'More crop per drop. Bewässerung datenbasiert planen.',
+    farmTagline: 'More crop per drop.',
+    farmLead: 'Vairrigation verbindet Satellitendaten, Wetterinformationen und KI, um Bewässerungsentscheidungen fundierter zu treffen und Wasser gezielter einzusetzen.',
+    farm1t: 'Felder im Blick', farm1d: 'Pflanzenzustand und Flächendaten übersichtlich auswerten.',
+    farm2t: 'Bewässerung besser planen', farm2d: 'Wetter- und Standortdaten für fundierte Entscheidungen einbeziehen.',
+    farm3t: 'Ressourcen gezielt nutzen', farm3d: 'Wasser effizienter einsetzen und landwirtschaftliche Abläufe unterstützen.',
+    farmDetailCTA: 'Vairrigation kennenlernen', farmFormOption: 'Vairrigation / Smart Farming',
+    farmIllustration: 'KI-generierte Produktvisualisierung. Angezeigte Dashboard-Werte sind Beispieldaten.',
+    exploreProduct: 'Produkt ansehen',
+    cyberTagline: 'Cyberangriffe erkennen, bevor sie zum Problem werden.',
+    cyberLead: 'Sentry analysiert Netzwerkaktivitäten, erkennt verdächtige Muster und unterstützt Unternehmen dabei, Sicherheitsrisiken frühzeitig zu identifizieren und gezielt darauf zu reagieren.',
+    cy1t: 'Angriffe früh erkennen', cy1d: 'Erkennt verdächtige Aktivitäten und auffällige Muster im Netzwerkverkehr.',
+    cy2t: 'Daten im Blick behalten', cy2d: 'Zeigt Risiken, Warnmeldungen und sicherheitsrelevante Entwicklungen zentral und verständlich.',
+    cy3t: 'Einfach im Einsatz', cy3d: 'Unterstützt Organisationen beim Überblick über ihre Sicherheitslage – auch ohne großes Security-Team.',
+    sentryDetailCTA: 'Sentry-Demo anfragen',
+    compDetailCTA: 'Compliance Tracker kennenlernen', heliosDetailCTA: 'Helios kennenlernen',
+    compTagline: 'Regulatorische Veränderungen erkennen. Sicherer entscheiden.',
+    compLead: 'Der Compliance Tracker hilft Unternehmen, regulatorische Entwicklungen weltweit zu beobachten, relevante Änderungen mit KI zu analysieren und deren Auswirkungen auf das eigene Geschäft einzuordnen. Mit verständlichen Zusammenfassungen, frühzeitigen Warnmeldungen und konkreten Handlungsempfehlungen.',
+    co1t: 'Vorgaben gezielt beobachten', co1d: 'Relevante regulatorische Entwicklungen strukturiert und nachvollziehbar im Blick behalten.',
+    co2t: 'Änderungen früh erkennen', co2d: 'Neue Anforderungen schneller identifizieren, einordnen und priorisieren.',
+    co3t: 'Handlungsbedarf ableiten', co3d: 'Verstehen, was sich ändert, wen es betrifft und welche nächsten Schritte sinnvoll sind.',
+    aiTagline: 'Weniger Verwaltung. Mehr Zeit für Ihre Kunden.',
+    aiLead: 'Helios verbindet Posteingang, Kalender und Arbeitsvorgänge in einem intelligenten KI-Arbeitsplatz. Die Software erkennt wichtige Informationen, priorisiert Aufgaben und unterstützt Makler dabei, ihren Arbeitsalltag effizienter zu organisieren.',
+    ai1t: 'Priorisiert, was wichtig ist', ai1d: 'Erkennt, was heute Aufmerksamkeit braucht.',
+    ai2t: 'Denkt an nächste Schritte', ai2d: 'Identifiziert Fristen, Aufgaben und relevante Vorgänge.',
+    ai3t: 'Reduziert Routinearbeit', ai3d: 'Schafft Freiraum für produktivere Kunden- und Facharbeit.',
+    aboutKicker: 'ÜBER G&R GROUP',
+    aboutTitle: 'Technologie für reale<br /><span class="text-muted">Herausforderungen.</span>',
+    aboutText: 'G&R Group entwickelt Softwarelösungen für Netzwerksicherheit, regulatorische Compliance, KI-gestützte Arbeitsprozesse und intelligente Landwirtschaft. Wir helfen Unternehmen, Risiken frühzeitig zu erkennen, neue Anforderungen einzuordnen, Abläufe zu vereinfachen und Ressourcen gezielter einzusetzen.',
+    aboutCTA: 'Lernen Sie uns kennen',
+    trustKicker: 'UNSER ANSPRUCH', trustTitle: 'Vertrauen entsteht durch Klarheit.',
+    trust1t: 'Made in Germany', trust1d: 'Technologieentwicklung mit Fokus auf Qualität, Verlässlichkeit und praktische Anwendbarkeit.',
+    trust2t: 'Software & Expertise', trust2d: 'Vier eigenständige Softwarelösungen mit einem gemeinsamen Anspruch an Qualität und Praxisnutzen.',
+    trust3t: 'Praxisnah entwickelt', trust3d: 'Konkrete Herausforderungen und verständliche Funktionen stehen im Mittelpunkt.',
+    trust4t: 'KI mit klarem Zweck', trust4d: 'Künstliche Intelligenz dort einsetzen, wo sie Transparenz, Entscheidungen und Effizienz verbessert.',
+    contactKicker: 'KONTAKT', contactTitle: 'Lassen Sie uns über Ihre Herausforderung sprechen.',
+    contactLead: 'Ob Sentry, Compliance Tracker, Helios oder Vairrigation – wir sprechen mit Ihnen über passende Lösungen und konkrete nächste Schritte.',
+    formTitle: 'Gespräch anfragen', labelName: 'Ihr Name', labelCompany: 'Unternehmen', labelEmail: 'Geschäftliche E-Mail',
+    labelTopic: 'Interessensgebiet', labelMessage: 'Ihre Nachricht (optional)', generalTopic: 'Allgemeine Anfrage',
+    phName: 'Name', phCompany: 'Unternehmen', phEmail: 'name@unternehmen.de', phMessage: 'Worum geht es?',
+    submit: 'E-Mail-Anfrage vorbereiten', formNote: 'Beim Absenden öffnet sich Ihr E-Mail-Programm. Es werden keine Daten über dieses Formular an einen Server übertragen.',
+    footerLine: 'Technologie entwickeln. Zukunft gestalten.',
+    menuOpen: 'Menü öffnen', menuClose: 'Menü schließen',
+    mailSubject: 'Anfrage zu', mailTopic: 'Interessensgebiet', mailName: 'Name', mailCompany: 'Unternehmen', mailEmail: 'E-Mail', mailMessage: 'Nachricht',
+    mailStatus: 'Ihr E-Mail-Programm sollte sich jetzt öffnen. Sollte das nicht funktionieren, schreiben Sie bitte direkt an office@gr-sec.com.'
   },
   en: {
-    htmlLang: "en",
-    title: "G&R Group",
-    farming: "Smart Farming",
-    cyber: "Cybersecurity",
-    compliance: "Compliance",
-    aios: "AI Workspace",
-    kickerHero: "MADE IN GERMANY",
-    heroTitle: "Embrace the future.<br />Trust the technology.",
-    heroLead: "We develop and connect sovereign cybersecurity, smart farming, legal tech and AI solutions.",
-    products: "See the products",
-    fieldsKicker: "LINES OF BUSINESS",
-    fieldsTitle: "What G&R Group builds",
-    fieldsLead: "Four products, one bar: operational excellence and speed.",
-    cardFarm: "Vairrigation – precise irrigation and digital field work.",
-    cardCyber: "G&R Sentry – AI intrusion detection on your own network.",
-    cardComp: "Legal tech for GDPR, NIS2 and auditable trails.",
-    cardAiTitle: "Artificial Intelligence",
-    cardAi: "AI workplace for brokers: mail, calendar, tasks and book of business.",
-    farmLead: "More crop per drop.<br />Know exactly what each field needs, with AI and satellite data.",
-    farm1t: "Irrigate precisely", farm1d: "Know when and how much water each field actually needs.",
-    farm2t: "Fields in view", farm2d: "Moisture, crop condition and development at a glance.",
-    farm3t: "Save resources", farm3d: "Use less water and fertilizer — without giving away yield.",
-    cyberTitle: "Sentry",
-    cyberLead: "Sentry detects cyberattacks early, assesses risks automatically and warns before damage is done.",
-    cy1t: "Spot attacks early", cy1d: "Detects suspicious activity before damage is done.",
-    cy2t: "Keep data in view", cy2d: "Shows risks and warnings in one place, clearly.",
-    cy3t: "Simple to run", cy3d: "Works in daily operations — without your own security team.",
-    compTitle: "Compliance at a glance",
-    compLead: "Our AI watches the rules that apply, spots changes and shows you where action is needed.",
-    co1t: "Rules in view", co1d: "All relevant laws and requirements for your company.",
-    co2t: "Spot changes early", co2d: "New requirements are detected and classified automatically.",
-    co3t: "See what to do", co3d: "See at once where action is needed and what comes next.",
-    aiTitle: "Helios",
-    aiLead: "The AI workplace that thinks with you.<br />Helios understands mail, appointments and cases, spots what needs action and automatically prioritises what matters next. Less admin. More time for clients.",
-    ai1t: "Prioritised for you", ai1d: "What really matters today.",
-    ai2t: "Thinks ahead", ai2d: "Spots deadlines, tasks and next steps.",
-    ai3t: "Takes work off you", ai3d: "Less routine. More time for clients.",
-    contactKicker: "CONTACT",
-    contactTitle: "Let’s talk about your challenge.",
-    contactLead: "Whether cybersecurity, smart farming, compliance or an AI workplace — we show you how our technology can be used in your company.",
-    phName: "Name", phCompany: "Company", phEmail: "Email", phMsg: "What do you want to solve or improve?",
-    optPrompt: "What are you interested in?",
-    optCyber: "Cybersecurity – Sentry", optFarm: "Smart Farming – Vairrigation", optComp: "Compliance", optAi: "AI workplace – Helios",
-    submit: "Request a conversation",
-    thanks: "Thank you. The request is ready to send.",
-    more: "Product page",
-    backHome: "Back to the overview",
-    talk: "Talk to us",
-    sentryPageTitle: "Sentry · G&R Group",
-    sentryMore: "Sentry learns normal traffic and raises an alert as soon as something departs from it. Port scans, tunnels, botnets and unusual data movement are reported in plain language.",
-    farmPageTitle: "Vairrigation · G&R Group",
-    farmMore: "Less water in the wrong place, more yield where the field needs it. Control stays understandable on the farm.",
-    compPageTitle: "Compliance · G&R Group",
-    compMore: "Legal sees at a glance where the company meets the rules and where it still needs to tighten them.",
-    aiPageTitle: "Helios · G&R Group",
-    aiMore: "What is due today, what is overdue and what the client wrote sits on one surface. Open items stay visible until they are done."
+    htmlLang: 'en',
+    pageTitle: 'G&R Group | Developing technology. Shaping the future.',
+    pageDescription: 'G&R Group develops proprietary software solutions for network security, regulatory compliance, AI workspaces and smart farming.',
+    skip: 'Skip to content',
+    navProducts: 'Solutions', navAbout: 'Company', navContact: 'Contact',
+    heroEyebrow: 'MADE IN GERMANY',
+    heroTitle: 'Developing technology.<br /><span class="title-accent">Shaping the future.</span>',
+    heroLead: 'We develop intelligent software solutions for secure networks, regulatory clarity, productive workflows and data-driven agriculture.',
+    productsCTA: 'Explore our solutions', contactCTA: 'Request a conversation',
+    fieldsKicker: 'OUR SOLUTIONS',
+    fieldsTitle: 'Four solutions.<br /><span class="text-muted">One shared vision.</span>',
+    fieldsLead: 'Four proprietary software solutions for network security, regulatory compliance, productive workflows and data-driven agriculture.',
+    cardCyber: 'Detect cyberattacks before they become a problem.',
+    cardComp: 'Spot regulatory changes. Make more informed decisions.',
+    cardAi: 'Less administration. More time for your clients.',
+    cardFarm: 'More crop per drop. Smarter, data-driven irrigation.',
+    farmTagline: 'More crop per drop.',
+    farmLead: 'Vairrigation combines satellite data, weather information and AI to support informed irrigation decisions and more targeted use of water.',
+    farm1t: 'Monitor your fields', farm1d: 'Explore crop conditions and field data in one clear view.',
+    farm2t: 'Plan irrigation better', farm2d: 'Use weather and location data to inform decisions.',
+    farm3t: 'Use resources efficiently', farm3d: 'Use water more effectively and support day-to-day farm operations.',
+    farmDetailCTA: 'Explore Vairrigation', farmFormOption: 'Vairrigation / Smart Farming',
+    farmIllustration: 'AI-generated product illustration. Dashboard values are sample data.',
+    exploreProduct: 'Explore product',
+    cyberTagline: 'Detect cyberattacks before they become a problem.',
+    cyberLead: 'Sentry analyzes network activity, detects suspicious patterns and helps organizations identify security risks at an early stage and respond in a targeted way.',
+    cy1t: 'Detect threats early', cy1d: 'Detects suspicious activity and unusual patterns in network traffic.',
+    cy2t: 'Keep an eye on the data', cy2d: 'Makes risks, alerts and security-related developments easy to see and understand.',
+    cy3t: 'Built for everyday use', cy3d: 'Helps organizations maintain visibility into their security posture, even without a large security team.',
+    sentryDetailCTA: 'Request a Sentry demo',
+    compDetailCTA: 'Explore Compliance Tracker', heliosDetailCTA: 'Explore Helios',
+    compTagline: 'Spot regulatory changes. Make more informed decisions.',
+    compLead: 'Compliance Tracker helps businesses monitor regulatory developments worldwide, use AI to analyze relevant changes and assess their impact on the organization. With accessible summaries, early alerts and practical recommendations.',
+    co1t: 'Monitor relevant regulations', co1d: 'Track regulatory developments in a structured and traceable way.',
+    co2t: 'Identify changes early', co2d: 'Identify, contextualize and prioritize new requirements faster.',
+    co3t: 'Understand what to do next', co3d: 'Understand what is changing, who is affected and which next steps make sense.',
+    aiTagline: 'Less administration. More time for your clients.',
+    aiLead: 'Helios brings inboxes, calendars and workflows together in one intelligent AI workspace. It identifies important information, prioritizes tasks and helps brokers organize their workday more efficiently.',
+    ai1t: 'Prioritizes what matters', ai1d: 'Identifies what needs attention today.',
+    ai2t: 'Anticipates next steps', ai2d: 'Identifies deadlines, tasks and relevant cases.',
+    ai3t: 'Reduces routine work', ai3d: 'Creates more time for valuable client-facing and specialist work.',
+    aboutKicker: 'ABOUT G&R GROUP',
+    aboutTitle: 'Technology for real-world<br /><span class="text-muted">challenges.</span>',
+    aboutText: 'G&R Group develops software for network security, regulatory compliance, AI-powered workflows and intelligent agriculture. We help organizations detect risks earlier, understand new requirements, simplify processes and use resources more effectively.',
+    aboutCTA: 'Get to know us',
+    trustKicker: 'WHAT DRIVES US', trustTitle: 'Trust starts with clarity.',
+    trust1t: 'Made in Germany', trust1d: 'Technology development focused on quality, reliability and practical usability.',
+    trust2t: 'Software & expertise', trust2d: 'Four proprietary software solutions built around quality and practical value.',
+    trust3t: 'Built for real use', trust3d: 'Specific challenges and understandable features are at the heart of our work.',
+    trust4t: 'Purposeful AI', trust4d: 'Using artificial intelligence where it improves transparency, decision-making and efficiency.',
+    contactKicker: 'CONTACT', contactTitle: 'Let’s talk about your challenge.',
+    contactLead: 'Whether you are interested in Sentry, Compliance Tracker, Helios or Vairrigation, we can discuss solutions and practical next steps.',
+    formTitle: 'Request a conversation', labelName: 'Your name', labelCompany: 'Company', labelEmail: 'Business email',
+    labelTopic: 'Area of interest', labelMessage: 'Your message (optional)', generalTopic: 'General inquiry',
+    phName: 'Name', phCompany: 'Company', phEmail: 'name@company.com', phMessage: 'What would you like to discuss?',
+    submit: 'Prepare email inquiry', formNote: 'Your email application will open when you submit. This form does not transmit your details to a server.',
+    footerLine: 'Developing technology. Shaping the future.',
+    menuOpen: 'Open menu', menuClose: 'Close menu',
+    mailSubject: 'Inquiry about', mailTopic: 'Area of interest', mailName: 'Name', mailCompany: 'Company', mailEmail: 'Email', mailMessage: 'Message',
+    mailStatus: 'Your email application should open now. If it does not, please email office@gr-sec.com directly.'
   }
 };
 
-let lang = localStorage.getItem("gr-lang") || "de";
+let lang = 'de';
+try { lang = localStorage.getItem('gr-lang') === 'en' ? 'en' : 'de'; } catch (_) { /* Browsers may block local storage. */ }
 
-function apply(l) {
-  const t = copy[l];
-  const page = document.body.dataset.page;
+function applyLanguage(next) {
+  lang = next;
+  const t = copy[lang];
   document.documentElement.lang = t.htmlLang;
-  document.title = (page && t[page + "PageTitle"]) || t.title;
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const k = el.getAttribute("data-i18n");
-    if (t[k] != null) el.innerHTML = t[k];
+  document.title = t.pageTitle;
+  document.querySelector('meta[name="description"]')?.setAttribute('content', t.pageDescription);
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.dataset.i18n;
+    if (Object.prototype.hasOwnProperty.call(t, key)) element.innerHTML = t[key];
   });
-  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
-    const k = el.getAttribute("data-i18n-placeholder");
-    if (t[k]) el.placeholder = t[k];
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+    const key = element.dataset.i18nPlaceholder;
+    if (t[key]) element.placeholder = t[key];
   });
-  const btn = document.getElementById("langBtn");
-  if (btn) btn.textContent = l === "de" ? "EN" : "DE";
+  const languageButton = document.getElementById('langBtn');
+  if (languageButton) {
+    languageButton.innerHTML = `${lang === 'de' ? 'EN' : 'DE'} <span aria-hidden="true">↗</span>`;
+    languageButton.setAttribute('aria-label', lang === 'de' ? 'Switch to English' : 'Zu Deutsch wechseln');
+    languageButton.title = lang === 'de' ? 'Switch to English' : 'Zu Deutsch wechseln';
+  }
+  const menuButton = document.getElementById('menuToggle');
+  if (menuButton) menuButton.setAttribute('aria-label', document.getElementById('siteNav')?.classList.contains('is-open') ? t.menuClose : t.menuOpen);
 }
 
-document.getElementById("langBtn")?.addEventListener("click", () => {
-  lang = lang === "de" ? "en" : "de";
-  localStorage.setItem("gr-lang", lang);
-  apply(lang);
+document.getElementById('langBtn')?.addEventListener('click', () => {
+  const next = lang === 'de' ? 'en' : 'de';
+  try { localStorage.setItem('gr-lang', next); } catch (_) { /* No storage available. */ }
+  applyLanguage(next);
 });
 
-document.getElementById("form")?.addEventListener("submit", (e) => {
-  e.preventDefault();
-  document.getElementById("thanks").hidden = false;
+const menuButton = document.getElementById('menuToggle');
+const menu = document.getElementById('siteNav');
+menuButton?.addEventListener('click', () => {
+  const open = menu.classList.toggle('is-open');
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.setAttribute('aria-label', open ? copy[lang].menuClose : copy[lang].menuOpen);
+});
+menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+  menu.classList.remove('is-open');
+  menuButton?.setAttribute('aria-expanded', 'false');
+  menuButton?.setAttribute('aria-label', copy[lang].menuOpen);
+}));
+
+const contactForm = document.getElementById('form');
+contactForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!contactForm.reportValidity()) return;
+  const t = copy[lang];
+  const info = new FormData(contactForm);
+  const topic = String(info.get('topic') || 'G&R Group');
+  const subject = `${t.mailSubject} ${topic} | G&R Group`;
+  const body = [
+    `${t.mailTopic}: ${topic}`,
+    `${t.mailName}: ${String(info.get('name') || '').trim()}`,
+    `${t.mailCompany}: ${String(info.get('company') || '').trim()}`,
+    `${t.mailEmail}: ${String(info.get('email') || '').trim()}`,
+    '', `${t.mailMessage}:`, String(info.get('msg') || '').trim()
+  ].join('\n');
+  // No form backend is configured in this static site; hand off to the user's email app.
+  window.location.href = `mailto:office@gr-sec.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const note = document.getElementById('formNote');
+  if (note) note.textContent = t.mailStatus;
 });
 
-apply(lang);
+applyLanguage(lang);
+
+
+// Small usability improvements: preserve users' intent and accessible mobile navigation.
+document.querySelectorAll('[data-contact-topic]').forEach((link) => {
+  link.addEventListener('click', () => {
+    const topicField = document.querySelector('#form select[name="topic"]');
+    if (topicField) topicField.value = link.dataset.contactTopic;
+  });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menu?.classList.contains('is-open')) {
+    menu.classList.remove('is-open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    menuButton?.setAttribute('aria-label', copy[lang].menuOpen);
+    menuButton?.focus();
+  }
+});

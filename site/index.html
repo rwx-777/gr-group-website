@@ -1,150 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>G&R Group</title>
-  <meta name="description" content="G&R Group entwickelt und verbindet souveräne Cybersicherheit, Smart Farming, Legal Tech und KI-Lösungen." />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" />
+  <meta name="theme-color" content="#060d17" />
+  <meta name="description" content="G&R Group entwickelt intelligente Softwarelösungen für Netzwerksicherheit, regulatorische Compliance, KI-Arbeitsplätze und Smart Farming." />
+  <title>G&R Group | Technologie entwickeln. Zukunft gestalten.</title>
+  <link rel="icon" type="image/x-icon" href="https://gr-sec.com/favicon.ico" />
+  <link rel="alternate icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" type="image/webp" imagesrcset="images/hero-europe-night-1080.webp 1080w, images/hero-europe-night-hd.webp 1774w" imagesizes="100vw" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a href="#top"><img src="images/logo.png" alt="G&R Group" class="logo" /></a>
-      <nav class="nav-links">
-        <a href="sentry.html" data-i18n="cyber">Cybersecurity</a>
-        <a href="farming.html" data-i18n="farming">Smart Farming</a>
-        <a href="compliance.html" data-i18n="compliance">Compliance</a>
-        <a href="helios.html" data-i18n="aios">KI Workspace</a>
-        <button class="lang" id="langBtn" type="button">EN</button>
+  <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="G&R Group – Startseite"><img src="https://gr-hld.com/images/logo.png" onerror="this.onerror=null;this.src='images/logo-light.svg'" alt="G&R Group" width="186" height="42" /></a>
+      <button class="menu-toggle" type="button" id="menuToggle" aria-controls="siteNav" aria-expanded="false" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Hauptnavigation">
+        <a href="#products" data-i18n="navProducts">Lösungen</a>
+        <a href="#about" data-i18n="navAbout">Unternehmen</a>
+        <a href="#contact" data-i18n="navContact">Kontakt</a>
       </nav>
+      <button type="button" class="language-switch" id="langBtn" aria-label="Switch to English" title="Switch to English">EN <span aria-hidden="true">↗</span></button>
     </div>
   </header>
 
-  <main id="top">
-    <section class="wrap hero">
-      <div>
-        <p class="kicker" data-i18n="kickerHero">MADE IN GERMANY</p>
-        <h1 data-i18n="heroTitle">Zukunft annehmen.<br />Technologie vertrauen.</h1>
-        <p class="lead" data-i18n="heroLead">Wir entwickeln und verbinden souveräne Cybersicherheit, Smart Farming, Legal Tech und KI-Lösungen.</p>
-        <a class="btn" href="#fields" data-i18n="products">Produkte ansehen</a>
+  <main id="main">
+    <section class="hero-shell" aria-labelledby="heroTitle">
+      <!-- Full-width Europe-at-night artwork with no baked-in lettering. -->
+      <div class="hero-visual" aria-hidden="true">
+        <picture>
+          <source type="image/webp" srcset="images/hero-europe-night-1080.webp 1080w, images/hero-europe-night-hd.webp 1774w" sizes="100vw" />
+          <img src="images/hero-europe-night-hd.jpg" alt="" width="1774" height="887" fetchpriority="high" decoding="async" />
+        </picture>
       </div>
-      <img src="images/holding_hero.jpg" alt="The Shard, London — G&R Group" />
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-rule"></span><span data-i18n="heroEyebrow">MADE IN GERMANY</span></p>
+          <h1 id="heroTitle" data-i18n="heroTitle">Technologie entwickeln.<br /><span class="title-accent">Zukunft gestalten.</span></h1>
+          <p class="hero-lead" data-i18n="heroLead">Wir entwickeln intelligente Softwarelösungen für sichere Netzwerke, regulatorische Transparenz, produktivere Arbeitsprozesse und datenbasierte Landwirtschaft.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#products"><span data-i18n="productsCTA">Lösungen entdecken</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#contact"><span data-i18n="contactCTA">Gespräch anfragen</span><span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Lösungsbereiche">
+            <span>G&R SENTRY</span><i></i><span>LEGAL TECH</span><i></i><span>AI WORKSPACE</span><i></i><span>SMART FARMING</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom-line" aria-hidden="true"></div>
     </section>
 
-    <section class="wrap fields" id="fields">
-      <p class="kicker" data-i18n="fieldsKicker">GESCHÄFTSFELDER</p>
-      <h2 data-i18n="fieldsTitle">Was G&R Group baut</h2>
-      <p class="lead" data-i18n="fieldsLead">Vier Produkte, eine Messlatte: operative Exzellenz und Geschwindigkeit.</p>
-      <div class="cards">
-        <a class="card" href="sentry.html">
-          <img src="images/cyber.jpg" alt="Sentry" />
-          <div><h3>Cybersecurity</h3><p data-i18n="cardCyber">G&R Sentry – KI-gestützte Intrusion Detection im eigenen Netz.</p></div>
-        </a>
-        <a class="card" href="farming.html">
-          <img src="images/farming.jpg" alt="Smart Farming" />
-          <div><h3>Smart Farming</h3><p data-i18n="cardFarm">Vairrigation – präzise Bewässerung und digitale Feldwirtschaft.</p></div>
-        </a>
-        <a class="card" href="compliance.html">
-          <img src="images/compliance.jpg" alt="Compliance" />
-          <div><h3>Compliance</h3><p data-i18n="cardComp">Legal Tech für GDPR, NIS2 und nachvollziehbare Prüfpfade.</p></div>
-        </a>
-        <a class="card" href="helios.html">
-          <img src="images/ai.jpg" alt="Artificial Intelligence" />
-          <div><h3 data-i18n="cardAiTitle">Artificial Intelligence</h3><p data-i18n="cardAi">KI Arbeitsplatz für Makler: Post, Kalender, Aufgaben und Bestand.</p></div>
-        </a>
-      </div>
-    </section>
-
-    <section class="wrap band" id="cyber">
-      <div class="band-media"><img src="images/cyber.jpg" alt="Sentry" /></div>
-      <div class="band-copy">
-        <p class="kicker">CYBERSECURITY</p>
-        <h2 data-i18n="cyberTitle">Sentry</h2>
-        <p class="lead" data-i18n="cyberLead">Sentry erkennt Cyberangriffe frühzeitig, bewertet Risiken automatisch und warnt, bevor Schaden entsteht.</p>
-        <div class="facts">
-          <div class="fact"><strong data-i18n="cy1t">Angriffe früh erkennen</strong><span data-i18n="cy1d">Erkennt verdächtige Aktivitäten, bevor Schaden entsteht.</span></div>
-          <div class="fact"><strong data-i18n="cy2t">Daten im Blick behalten</strong><span data-i18n="cy2d">Zeigt Risiken und Warnungen zentral und verständlich.</span></div>
-          <div class="fact"><strong data-i18n="cy3t">Einfach im Einsatz</strong><span data-i18n="cy3d">Funktioniert im Alltag – ohne eigenes Security Team.</span></div>
+    <section class="section section-products" id="products" aria-labelledby="productsHeading">
+      <div class="wrap">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow" data-i18n="fieldsKicker">UNSERE LÖSUNGEN</p>
+            <h2 id="productsHeading" data-i18n="fieldsTitle">Vier Lösungen.<br /><span class="text-muted">Eine gemeinsame Vision.</span></h2>
+          </div>
+          <p class="section-intro" data-i18n="fieldsLead">Vier eigene Softwarelösungen für Netzwerksicherheit, regulatorische Compliance, produktive Arbeitsprozesse und datenbasierte Landwirtschaft.</p>
+        </div>
+        <div class="product-grid">
+          <a href="#cyber" class="product-card">
+            <div class="product-image"><img src="images/cyber.jpg" alt="Sentry Cybersecurity-Motiv" loading="lazy" decoding="async" /></div>
+            <div class="product-card-body"><span class="product-category">CYBERSECURITY</span><h3>G&R Sentry</h3><p data-i18n="cardCyber">Cyberangriffe erkennen, bevor sie zum Problem werden.</p><span class="product-card-link"><span data-i18n="exploreProduct">Produkt ansehen</span><span aria-hidden="true">↗</span></span></div>
+          </a>
+          <a href="#compliance" class="product-card">
+            <div class="product-image"><img src="images/compliance.jpg" alt="Drei EU-Flaggen vor moderner Glasarchitektur im Abendlicht" loading="lazy" decoding="async" /></div>
+            <div class="product-card-body"><span class="product-category">COMPLIANCE · LEGAL TECH</span><h3>Compliance Tracker</h3><p data-i18n="cardComp">Regulatorische Veränderungen erkennen. Sicherer entscheiden.</p><span class="product-card-link"><span data-i18n="exploreProduct">Produkt ansehen</span><span aria-hidden="true">↗</span></span></div>
+          </a>
+          <a href="#ai" class="product-card">
+            <div class="product-image"><img src="images/ai.jpg" alt="Helios KI-Arbeitsplatz auf einem Laptop vor der Münchner Frauenkirche" loading="lazy" decoding="async" /></div>
+            <div class="product-card-body"><span class="product-category">ARTIFICIAL INTELLIGENCE</span><h3>Helios</h3><p data-i18n="cardAi">Weniger Verwaltung. Mehr Zeit für Ihre Kunden.</p><span class="product-card-link"><span data-i18n="exploreProduct">Produkt ansehen</span><span aria-hidden="true">↗</span></span></div>
+          </a>
+          <a href="#farming" class="product-card product-card-farming">
+            <div class="product-image"><img src="images/vairrigation.jpg" alt="Bewässertes Feld mit Vairrigation-Dashboard auf einem Tablet – illustrative Produktvisualisierung" loading="lazy" decoding="async" width="922" height="770" /></div>
+            <div class="product-card-body"><span class="product-category">SMART FARMING</span><h3>Vairrigation</h3><p data-i18n="cardFarm">More crop per drop. Bewässerung datenbasiert planen.</p><span class="product-card-link"><span data-i18n="exploreProduct">Produkt ansehen</span><span aria-hidden="true">↗</span></span></div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="wrap band flip" id="farming">
-      <div class="band-media"><img src="images/farming.jpg" alt="Smart Farming" /></div>
-      <div class="band-copy">
-        <p class="kicker">SMART FARMING</p>
-        <h2>Vairrigation</h2>
-        <p class="lead" data-i18n="farmLead">More crop per drop.<br />Mit KI und Satellitendaten genau wissen, was jedes Feld braucht.</p>
-        <div class="facts">
-          <div class="fact"><strong data-i18n="farm1t">Gezielt bewässern</strong><span data-i18n="farm1d">Wissen, wann und wie viel Wasser jedes Feld wirklich braucht.</span></div>
-          <div class="fact"><strong data-i18n="farm2t">Felder im Blick</strong><span data-i18n="farm2d">Feuchtigkeit, Pflanzenzustand und Entwicklung auf einen Blick.</span></div>
-          <div class="fact"><strong data-i18n="farm3t">Ressourcen sparen</strong><span data-i18n="farm3d">Weniger Wasser und Dünger einsetzen – ohne Ertrag zu verschenken.</span></div>
+    <div class="product-details">
+      <section class="wrap detail-row" id="cyber" aria-labelledby="cyberHeading">
+        <div class="detail-media"><img src="images/cyber.jpg" alt="G&R Sentry – bestehendes Cybersecurity-Bild" loading="lazy" decoding="async" /></div>
+        <div class="detail-content">
+          <p class="eyebrow">CYBERSECURITY</p>
+          <h2 id="cyberHeading">G&R Sentry</h2>
+          <h3 class="detail-tagline" data-i18n="cyberTagline">Cyberangriffe erkennen, bevor sie zum Problem werden.</h3>
+          <p class="detail-lead" data-i18n="cyberLead">Sentry analysiert Netzwerkaktivitäten, erkennt verdächtige Muster und unterstützt Unternehmen dabei, Sicherheitsrisiken frühzeitig zu identifizieren und gezielt darauf zu reagieren.</p>
+          <div class="feature-list">
+            <div class="feature"><span class="feature-index">01</span><div><strong data-i18n="cy1t">Angriffe früh erkennen</strong><p data-i18n="cy1d">Erkennt verdächtige Aktivitäten und auffällige Muster im Netzwerkverkehr.</p></div></div>
+            <div class="feature"><span class="feature-index">02</span><div><strong data-i18n="cy2t">Daten im Blick behalten</strong><p data-i18n="cy2d">Zeigt Risiken, Warnmeldungen und sicherheitsrelevante Entwicklungen zentral und verständlich.</p></div></div>
+            <div class="feature"><span class="feature-index">03</span><div><strong data-i18n="cy3t">Einfach im Einsatz</strong><p data-i18n="cy3d">Unterstützt Organisationen beim Überblick über ihre Sicherheitslage – auch ohne großes Security-Team.</p></div></div>
+          </div>
+          <a href="#contact" class="text-link detail-cta" data-contact-topic="G&R Sentry"><span data-i18n="sentryDetailCTA">Sentry-Demo anfragen</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      <section class="wrap detail-row detail-reverse" id="compliance" aria-labelledby="compHeading">
+        <div class="detail-media"><img src="images/compliance.jpg" alt="Drei EU-Flaggen vor einem modernen europäischen Verwaltungsgebäude" loading="lazy" decoding="async" /></div>
+        <div class="detail-content">
+          <p class="eyebrow">COMPLIANCE · LEGAL TECH</p>
+          <h2 id="compHeading">Compliance Tracker</h2>
+          <h3 class="detail-tagline" data-i18n="compTagline">Regulatorische Veränderungen erkennen. Sicherer entscheiden.</h3>
+          <p class="detail-lead" data-i18n="compLead">Der Compliance Tracker hilft Unternehmen, regulatorische Entwicklungen weltweit zu beobachten, relevante Änderungen mit KI zu analysieren und deren Auswirkungen auf das eigene Geschäft einzuordnen. Mit verständlichen Zusammenfassungen, frühzeitigen Warnmeldungen und konkreten Handlungsempfehlungen.</p>
+          <div class="feature-list">
+            <div class="feature"><span class="feature-index">01</span><div><strong data-i18n="co1t">Vorgaben gezielt beobachten</strong><p data-i18n="co1d">Relevante regulatorische Entwicklungen strukturiert und nachvollziehbar im Blick behalten.</p></div></div>
+            <div class="feature"><span class="feature-index">02</span><div><strong data-i18n="co2t">Änderungen früh erkennen</strong><p data-i18n="co2d">Neue Anforderungen schneller identifizieren, einordnen und priorisieren.</p></div></div>
+            <div class="feature"><span class="feature-index">03</span><div><strong data-i18n="co3t">Handlungsbedarf ableiten</strong><p data-i18n="co3d">Verstehen, was sich ändert, wen es betrifft und welche nächsten Schritte sinnvoll sind.</p></div></div>
+          </div>
+          <a href="#contact" class="text-link detail-cta" data-contact-topic="Compliance Tracker"><span data-i18n="compDetailCTA">Compliance Tracker kennenlernen</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      <section class="wrap detail-row" id="ai" aria-labelledby="aiHeading">
+        <div class="detail-media"><img src="images/ai.jpg" alt="Helios – KI-Arbeitsplatz auf einem Laptop mit Blick auf die Münchner Frauenkirche" loading="lazy" decoding="async" /></div>
+        <div class="detail-content">
+          <p class="eyebrow">ARTIFICIAL INTELLIGENCE · WORKSPACE</p>
+          <h2 id="aiHeading">Helios</h2>
+          <h3 class="detail-tagline" data-i18n="aiTagline">Weniger Verwaltung. Mehr Zeit für Ihre Kunden.</h3>
+          <p class="detail-lead" data-i18n="aiLead">Helios verbindet Posteingang, Kalender und Arbeitsvorgänge in einem intelligenten KI-Arbeitsplatz. Die Software erkennt wichtige Informationen, priorisiert Aufgaben und unterstützt Makler dabei, ihren Arbeitsalltag effizienter zu organisieren.</p>
+          <div class="feature-list">
+            <div class="feature"><span class="feature-index">01</span><div><strong data-i18n="ai1t">Priorisiert, was wichtig ist</strong><p data-i18n="ai1d">Erkennt, was heute Aufmerksamkeit braucht.</p></div></div>
+            <div class="feature"><span class="feature-index">02</span><div><strong data-i18n="ai2t">Denkt an nächste Schritte</strong><p data-i18n="ai2d">Identifiziert Fristen, Aufgaben und relevante Vorgänge.</p></div></div>
+            <div class="feature"><span class="feature-index">03</span><div><strong data-i18n="ai3t">Reduziert Routinearbeit</strong><p data-i18n="ai3d">Schafft Freiraum für produktivere Kunden- und Facharbeit.</p></div></div>
+          </div>
+          <a href="#contact" class="text-link detail-cta" data-contact-topic="Helios"><span data-i18n="heliosDetailCTA">Helios kennenlernen</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      <section class="wrap detail-row detail-reverse" id="farming" aria-labelledby="farmingHeading">
+        <div class="detail-media">
+          <img src="images/vairrigation.jpg" alt="Vairrigation – Feldübersicht auf einem Tablet vor bewässerter Landwirtschaftsfläche" loading="lazy" decoding="async" width="922" height="770" />
+          <p class="illustration-note" data-i18n="farmIllustration">KI-generierte Produktvisualisierung. Angezeigte Dashboard-Werte sind Beispieldaten.</p>
+        </div>
+        <div class="detail-content">
+          <p class="eyebrow">SMART FARMING</p>
+          <h2 id="farmingHeading">Vairrigation</h2>
+          <h3 class="detail-tagline" data-i18n="farmTagline">More crop per drop.</h3>
+          <p class="detail-lead" data-i18n="farmLead">Vairrigation verbindet Satellitendaten, Wetterinformationen und KI, um Bewässerungsentscheidungen fundierter zu treffen und Wasser gezielter einzusetzen.</p>
+          <div class="feature-list">
+            <div class="feature"><span class="feature-index">01</span><div><strong data-i18n="farm1t">Felder im Blick</strong><p data-i18n="farm1d">Pflanzenzustand und Flächendaten übersichtlich auswerten.</p></div></div>
+            <div class="feature"><span class="feature-index">02</span><div><strong data-i18n="farm2t">Bewässerung besser planen</strong><p data-i18n="farm2d">Wetter- und Standortdaten für fundierte Entscheidungen einbeziehen.</p></div></div>
+            <div class="feature"><span class="feature-index">03</span><div><strong data-i18n="farm3t">Ressourcen gezielt nutzen</strong><p data-i18n="farm3d">Wasser effizienter einsetzen und landwirtschaftliche Abläufe unterstützen.</p></div></div>
+          </div>
+          <a href="#contact" class="text-link detail-cta" data-contact-topic="Vairrigation"><span data-i18n="farmDetailCTA">Vairrigation kennenlernen</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </div>
+
+    <section class="about-section" id="about" aria-labelledby="aboutHeading">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow" data-i18n="aboutKicker">ÜBER G&R GROUP</p>
+          <h2 id="aboutHeading" data-i18n="aboutTitle">Technologie für reale<br /><span class="text-muted">Herausforderungen.</span></h2>
+        </div>
+        <div class="about-copy"><p data-i18n="aboutText">G&R Group entwickelt Softwarelösungen für Netzwerksicherheit, regulatorische Compliance, KI-gestützte Arbeitsprozesse und intelligente Landwirtschaft. Wir helfen Unternehmen, Risiken frühzeitig zu erkennen, neue Anforderungen einzuordnen, Abläufe zu vereinfachen und Ressourcen gezielter einzusetzen.</p><a href="#contact" class="text-link"><span data-i18n="aboutCTA">Lernen Sie uns kennen</span><span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="trust-section" aria-labelledby="trustHeading">
+      <div class="wrap">
+        <div class="trust-heading"><p class="eyebrow" data-i18n="trustKicker">UNSER ANSPRUCH</p><h2 id="trustHeading" data-i18n="trustTitle">Vertrauen entsteht durch Klarheit.</h2></div>
+        <div class="trust-grid">
+          <div class="trust-item"><span class="trust-symbol" aria-hidden="true">✳</span><h3 data-i18n="trust1t">Made in Germany</h3><p data-i18n="trust1d">Technologieentwicklung mit Fokus auf Qualität, Verlässlichkeit und praktische Anwendbarkeit.</p></div>
+          <div class="trust-item"><span class="trust-symbol" aria-hidden="true">◇</span><h3 data-i18n="trust2t">Software & Expertise</h3><p data-i18n="trust2d">Vier eigenständige Softwarelösungen mit einem gemeinsamen Anspruch an Qualität und Praxisnutzen.</p></div>
+          <div class="trust-item"><span class="trust-symbol" aria-hidden="true">⌘</span><h3 data-i18n="trust3t">Praxisnah entwickelt</h3><p data-i18n="trust3d">Konkrete Herausforderungen und verständliche Funktionen stehen im Mittelpunkt.</p></div>
+          <div class="trust-item"><span class="trust-symbol" aria-hidden="true">✦</span><h3 data-i18n="trust4t">KI mit klarem Zweck</h3><p data-i18n="trust4d">Künstliche Intelligenz dort einsetzen, wo sie Transparenz, Entscheidungen und Effizienz verbessert.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="wrap band" id="compliance">
-      <div class="band-media"><img src="images/compliance.jpg" alt="Compliance" /></div>
-      <div class="band-copy">
-        <p class="kicker">COMPLIANCE · LEGAL TECH</p>
-        <h2 data-i18n="compTitle">Compliance auf einen Blick</h2>
-        <p class="lead" data-i18n="compLead">Unsere KI überwacht relevante Vorschriften, erkennt Änderungen und zeigt Ihnen, wo Handlungsbedarf besteht.</p>
-        <div class="facts">
-          <div class="fact"><strong data-i18n="co1t">Vorschriften im Blick</strong><span data-i18n="co1d">Alle relevanten Gesetze und Anforderungen für Ihr Unternehmen.</span></div>
-          <div class="fact"><strong data-i18n="co2t">Änderungen früh erkennen</strong><span data-i18n="co2d">Neue Vorgaben werden automatisch erkannt und eingeordnet.</span></div>
-          <div class="fact"><strong data-i18n="co3t">Handlungsbedarf erkennen</strong><span data-i18n="co3d">Sofort sehen, wo etwas zu tun ist und was als Nächstes ansteht.</span></div>
+    <section class="contact-section" id="contact" aria-labelledby="contactHeading">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow" data-i18n="contactKicker">KONTAKT</p>
+          <h2 id="contactHeading" data-i18n="contactTitle">Lassen Sie uns über Ihre Herausforderung sprechen.</h2>
+          <p data-i18n="contactLead">Ob Sentry, Compliance Tracker, Helios oder Vairrigation – wir sprechen mit Ihnen über passende Lösungen und konkrete nächste Schritte.</p>
+          <a class="contact-mail" href="mailto:office@gr-sec.com">office@gr-sec.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="form">
+            <h3 data-i18n="formTitle">Gespräch anfragen</h3>
+            <div class="form-row">
+              <label><span data-i18n="labelName">Ihr Name</span><input name="name" autocomplete="name" required data-i18n-placeholder="phName" placeholder="Name" /></label>
+              <label><span data-i18n="labelCompany">Unternehmen</span><input name="company" autocomplete="organization" data-i18n-placeholder="phCompany" placeholder="Unternehmen" /></label>
+            </div>
+            <label><span data-i18n="labelEmail">Geschäftliche E-Mail</span><input type="email" name="email" autocomplete="email" required data-i18n-placeholder="phEmail" placeholder="name@unternehmen.de" /></label>
+            <label><span data-i18n="labelTopic">Interessensgebiet</span><select name="topic"><option value="G&R Sentry">G&R Sentry / Cybersecurity</option><option value="Compliance Tracker">Compliance Tracker / Legal Tech</option><option value="Helios">Helios / KI Workspace</option><option value="Vairrigation" data-i18n="farmFormOption">Vairrigation / Smart Farming</option><option value="Allgemeine Anfrage" data-i18n="generalTopic">Allgemeine Anfrage</option></select></label>
+            <label><span data-i18n="labelMessage">Ihre Nachricht (optional)</span><textarea name="msg" rows="3" data-i18n-placeholder="phMessage" placeholder="Worum geht es?"></textarea></label>
+            <button class="button button-primary form-submit" type="submit"><span data-i18n="submit">E-Mail-Anfrage vorbereiten</span><span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite" data-i18n="formNote">Beim Absenden öffnet sich Ihr E-Mail-Programm. Es werden keine Daten über dieses Formular an einen Server übertragen.</p>
+          </form>
         </div>
       </div>
-    </section>
-
-    <section class="wrap band flip" id="ai">
-      <div class="band-media"><img src="images/ai.jpg" alt="Helios Workspace" /></div>
-      <div class="band-copy">
-        <p class="kicker">ARTIFICIAL INTELLIGENCE · WORKSPACE</p>
-        <h2 data-i18n="aiTitle">Helios</h2>
-        <p class="lead" data-i18n="aiLead">Der KI-Arbeitsplatz, der mitdenkt.<br />Helios versteht Post, Termine und Vorgänge, erkennt Handlungsbedarf und priorisiert automatisch, was als Nächstes wichtig ist. Weniger Verwaltung. Mehr Zeit für Kunden.</p>
-        <div class="facts">
-          <div class="fact"><strong data-i18n="ai1t">Priorisiert für Sie</strong><span data-i18n="ai1d">Was heute wirklich wichtig ist.</span></div>
-          <div class="fact"><strong data-i18n="ai2t">Denkt voraus</strong><span data-i18n="ai2d">Erkennt Fristen, Aufgaben und nächste Schritte.</span></div>
-          <div class="fact"><strong data-i18n="ai3t">Nimmt Arbeit ab</strong><span data-i18n="ai3d">Weniger Routine. Mehr Zeit für Kunden.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap contact" id="contact">
-      <p class="kicker" data-i18n="contactKicker">KONTAKT</p>
-      <h2 data-i18n="contactTitle">Lassen Sie uns über Ihre Herausforderung sprechen.</h2>
-      <p class="lead" data-i18n="contactLead">Ob Cybersecurity, Smart Farming, Compliance oder KI-Arbeitsplatz – wir zeigen Ihnen, wie unsere Technologie konkret in Ihrem Unternehmen eingesetzt werden kann.</p>
-      <form id="form">
-        <input name="name" required data-i18n-placeholder="phName" placeholder="Name" />
-        <input name="company" data-i18n-placeholder="phCompany" placeholder="Unternehmen" />
-        <input type="email" name="email" required data-i18n-placeholder="phEmail" placeholder="E-Mail" />
-        <select name="topic" required>
-          <option value="" selected disabled data-i18n="optPrompt">Wofür interessieren Sie sich?</option>
-          <option data-i18n="optCyber">Cybersecurity – Sentry</option>
-          <option data-i18n="optFarm">Smart Farming – Vairrigation</option>
-          <option data-i18n="optComp">Compliance</option>
-          <option data-i18n="optAi">KI-Arbeitsplatz – Helios</option>
-        </select>
-        <textarea name="msg" rows="4" data-i18n-placeholder="phMsg" placeholder="Was möchten Sie lösen oder verbessern?"></textarea>
-        <button type="submit" data-i18n="submit">Gespräch anfragen</button>
-        <p id="thanks" hidden data-i18n="thanks">Danke. Die Anfrage liegt bereit für den Versand.</p>
-      </form>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap foot">
-      <img src="images/logo.png" alt="G&R Group" class="foot-logo" />
-      <nav class="foot-links">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </nav>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a href="#top" class="brand" aria-label="G&R Group – zurück nach oben"><img src="https://gr-hld.com/images/logo.png" onerror="this.onerror=null;this.src='images/logo-light.svg'" alt="G&R Group" width="145" height="34" loading="lazy" decoding="async" /></a>
+      <p data-i18n="footerLine">Technologie entwickeln. Zukunft gestalten.</p>
+      <nav aria-label="Rechtliche Informationen"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="#contact" data-i18n="navContact">Kontakt</a></nav>
     </div>
   </footer>
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
