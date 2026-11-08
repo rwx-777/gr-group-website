@@ -298,6 +298,4 @@ footer:not(.site-footer) { background:#050c15; color:var(--muted); border-top:1p
 }
 
 
-.illustration-note { position: absolute; bottom: 0; left: 0; right: 0; z-index:2; padding: 20px 14px 11px;
-  font-size: .65rem; line-height:1.4; color:#d5e9f8; margin:0;
-  background: linear-gradient(0deg,rgba(2,7,14,.85),transparent); }
+
