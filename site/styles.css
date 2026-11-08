@@ -297,5 +297,56 @@ footer:not(.site-footer) { background:#050c15; color:var(--muted); border-top:1p
   .detail-cta { margin-top: 21px; }
 }
 
-
-
+/* About G&R Group: approved teamwork visual and concrete competencies. */
+.about-section {
+  overflow: hidden;
+  padding-block: 76px 80px;
+  background: radial-gradient(ellipse 70% 110% at 27% 90%, rgba(36,89,128,.11), transparent 72%), #0b1828;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0,.96fr) minmax(0,1.22fr);
+  gap: clamp(32px,4.2vw,70px);
+  align-items: stretch;
+}
+.about-intro { display: flex; flex-direction: column; min-width: 0; }
+.about-intro h2 { max-width: 630px; }
+.about-rule { display: block; width: 48px; height: 3px; margin: 24px 0 27px; border-radius: 4px; background: #8fe0fa; box-shadow: 0 0 15px rgba(125,220,249,.30); }
+.about-visual { position: relative; overflow: hidden; border-radius: 11px; margin-top: auto; min-height: 250px; aspect-ratio: 1.76; background: #10202e; }
+.about-visual img { display: block; height: 100%; width: 100%; object-fit: cover; object-position: 48% 50%; }
+.about-visual::after { position: absolute; content: ''; inset: 0; background: linear-gradient(0deg,rgba(7,18,31,.15),transparent 65%); pointer-events: none; }
+.about-copy { align-self: center; min-width: 0; }
+.about-copy > p { color: #d1ddec; line-height: 1.75; font-size: .97rem; margin: 0 0 20px; }
+.about-copy > .about-claim { color: #e6edf6; margin-bottom: 0; }
+.about-benefits { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 11px; margin: 30px 0 27px; }
+.about-benefit { min-width: 0; padding: 17px 12px 16px; border-radius: 10px; border: 1px solid rgba(140,204,246,.24); background: rgba(6,23,38,.72); }
+.about-benefit svg { display: block; height: 27px; width: 27px; fill: none; stroke: #86dcf8; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 13px; }
+.about-benefit h3 { color: #f6faff; font-family: var(--heading); font-size: .81rem; font-weight: 700; line-height: 1.35; margin: 0 0 8px; }
+.about-copy .about-benefit p { color: #bfcede; font-size: .72rem; line-height: 1.48; margin: 0; }
+.about-cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 20px; padding: 15px 21px; border-radius: 8px; color: #061723; background: #86d8f5; font-weight: 700; font-size: .87rem; line-height: 1.35; transition: background-color .2s ease, transform .2s ease; }
+.about-cta:hover { background: #b3ebff; transform: translateY(-2px); }
+.about-cta span:last-child { font-size: 1.1rem; }
+@media (max-width: 1150px) {
+  .about-grid { grid-template-columns: minmax(0, .93fr) minmax(0, 1.07fr); gap: 35px; }
+  .about-benefits { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .about-benefit { min-height: 120px; }
+}
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 31px; }
+  .about-visual { max-height: 360px; aspect-ratio: 2 / 1; margin-top: 0; }
+  .about-benefits { grid-template-columns: repeat(4,minmax(0,1fr)); }
+}
+@media (max-width: 650px) {
+  .about-section { padding-block: 63px 68px; }
+  .about-intro h2 { font-size: clamp(2rem, 7.7vw, 2.7rem); }
+  .about-rule { margin: 21px 0 22px; }
+  .about-visual { min-height: 195px; aspect-ratio: 1.55; }
+  .about-benefits { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; margin-block: 24px; }
+  .about-benefit { padding: 15px 14px; min-height: 128px; }
+  .about-benefit h3 { font-size: .83rem; }
+  .about-copy .about-benefit p { font-size: .77rem; }
+  .about-cta { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-cta { transition: none; }
+}
